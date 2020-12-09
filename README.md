@@ -12,6 +12,7 @@ You must install openssl library at first.
 brew install openssl
 ```
 and then (attention to replace your openssl version)
+#注意修改macOS的openssl库的路径，每个版本的macOS都不一样
 ```bash
 g++ *.cpp common/*.cpp -lcrypto -I/usr/local/Cellar/openssl/1.0.2s/include -L/usr/local/Cellar/openssl/1.0.2s/lib -O3 -o zsign
 ```
